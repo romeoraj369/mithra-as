@@ -15,6 +15,9 @@
 !/build/outputs/apk/
 !/build/outputs/apk/debug/
 !/build/outputs/apk/debug/*.apk
+
+/build/outputs/apk/debug/*
+!/build/outputs/apk/debug/*.apk
 /captures
 .externalNativeBuild
 .cxx
