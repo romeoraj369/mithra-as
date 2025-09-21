@@ -8,6 +8,13 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
+/build/
+
+# Un-ignore the path to debug APKs
+!/build/outputs/
+!/build/outputs/apk/
+!/build/outputs/apk/debug/
+!/build/outputs/apk/debug/*.apk
 /captures
 .externalNativeBuild
 .cxx
