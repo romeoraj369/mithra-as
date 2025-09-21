@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="General Settings">
+
+        <SwitchPreferenceCompat
+            app:key="notifications_enabled"
+            app:title="Enable Notifications"
+            app:summary="Receive notifications from the app"
+            app:defaultValue="true" />
+
+        <ListPreference
+            app:key="sync_frequency"
+            app:title="Sync Frequency"
+            app:summary="%s"
+            app:entries="@array/sync_frequency_entries"
+            app:entryValues="@array/sync_frequency_values"
+            app:defaultValue="60" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Account">
+
+        <Preference
+            app:key="edit_profile"
+            app:title="Edit Profile"
+            app:summary="Update your personal information" />
+
+        <Preference
+            app:key="log_out"
+            app:title="Log Out" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

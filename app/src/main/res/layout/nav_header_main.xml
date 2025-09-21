@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimaryContainer"
+    android:padding="24dp"
+    android:theme="@style/ThemeOverlay.Material3.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+<ImageView
+android:id="@+id/navHeaderIcon"
+android:layout_width="72dp"
+android:layout_height="72dp"
+android:layout_marginTop="24dp"
+android:contentDescription="@string/app_name"
+android:src="@mipmap/ic_launcher_round" /> <!-- Or your logo -->
+
+<TextView
+android:id="@+id/navHeaderTitle"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingTop="16dp"
+android:text="@string/app_name"
+android:textAppearance="?attr/textAppearanceTitleMedium"
+android:textColor="?attr/colorOnPrimaryContainer"/> <!-- M3 color -->
+
+<TextView
+android:id="@+id/navHeaderSubtitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Your AI Assistant"
+android:textAppearance="?attr/textAppearanceBodyMedium"
+android:textColor="?attr/colorOnPrimaryContainer"/> <!-- M3 color -->
+    </LinearLayout>

@@ -1,0 +1,20 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#0288D1"/>
+            <size android:width="120dp" android:height="120dp"/>
+            <stroke android:width="4dp" android:color="#81D4FA"/>
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#03A9F4"/>
+            <size android:width="120dp" android:height="120dp"/>
+            <stroke android:width="4dp" android:color="#B3E5FC"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Example vector paths (your logo will have many more) -->
+    <path
+        android:fillColor="#3F51B5"
+        android:pathData="M256,0C114.6,0 0,114.6 0,256s114.6,256 256,256 256,-114.6 256,-256S397.4,0 256,0z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M200,150h120v60h-120z"/>
+</vector>

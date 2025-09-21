@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.gamor.mithrax'
-    compileSdk 36
+    compileSdkVersion 36
 
     defaultConfig {
         applicationId "com.gamor.mithrax"
@@ -26,12 +26,24 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+
+    buildFeatures {
+        viewBinding true
+    }
+
 }
 
 dependencies {
-
-    implementation libs.appcompat
-    implementation libs.material
+//    implementation 'com.gauravk.audiovisualizer:audiovisualizer:0.9.2' // Optional
+    // Usually included with new projects
+    implementation('androidx.preference:preference-ktx:1.2.1')
+    implementation("androidx.core:core-ktx:1.17.0") // Or latest
+    implementation("androidx.appcompat:appcompat:1.7.1") // Or latest
+    implementation("com.google.android.material:material:1.13.0") // Or latest Material 3 components
+    implementation("androidx.constraintlayout:constraintlayout:2.2.1") // For flexible layouts
+    implementation("androidx.fragment:fragment-ktx:1.8.9")
+    implementation group: 'com.alphacephei', name: 'vosk-android', version: '0.3.70'
+    implementation libs.media3.common
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
