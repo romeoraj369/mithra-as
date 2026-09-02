@@ -27,6 +27,36 @@
             app:navigationIconTint="?attr/colorOnSurface" />
         <!-- Using MaterialToolbar directly -->
 
+        <LinearLayout
+            android:id="@+id/recordingBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/recording_banner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/recordingBannerText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/recordingBannerStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_stop_recording"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
         <!-- Container for Fragments -->
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_fragment_container"

@@ -1,34 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="General Settings">
+    <PreferenceCategory app:title="@string/settings_privacy_category">
 
-        <SwitchPreferenceCompat
-            app:key="notifications_enabled"
-            app:title="Enable Notifications"
-            app:summary="Receive notifications from the app"
-            app:defaultValue="true" />
+        <Preference
+            app:key="privacy_notice"
+            app:persistent="false"
+            app:selectable="false"
+            app:summary="@string/settings_privacy_summary"
+            app:title="@string/settings_privacy_title" />
 
-        <ListPreference
-            app:key="sync_frequency"
-            app:title="Sync Frequency"
-            app:summary="%s"
-            app:entries="@array/sync_frequency_entries"
-            app:entryValues="@array/sync_frequency_values"
-            app:defaultValue="60" />
+        <Preference
+            app:key="privacy_recording"
+            app:persistent="false"
+            app:selectable="false"
+            app:summary="@string/settings_recording_summary"
+            app:title="@string/settings_recording_title" />
+
+        <Preference
+            app:key="privacy_models"
+            app:persistent="false"
+            app:selectable="false"
+            app:summary="@string/settings_models_placeholder"
+            app:title="@string/settings_models_title" />
+
+        <Preference
+            app:key="privacy_storage"
+            app:persistent="false"
+            app:selectable="true"
+            app:summary="@string/settings_storage_placeholder"
+            app:title="@string/settings_storage_title" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="Account">
+    <PreferenceCategory app:title="@string/settings_data_category">
 
         <Preference
-            app:key="edit_profile"
-            app:title="Edit Profile"
-            app:summary="Update your personal information" />
+            app:key="delete_all_conversations"
+            app:persistent="false"
+            app:summary="@string/settings_delete_all_conversations_summary"
+            app:title="@string/settings_delete_all_conversations_title" />
 
         <Preference
-            app:key="log_out"
-            app:title="Log Out" />
+            app:key="clear_all_memories"
+            app:persistent="false"
+            app:summary="@string/settings_clear_all_memories_summary"
+            app:title="@string/settings_clear_all_memories_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_preferences_category">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="spoken_replies_enabled"
+            app:summary="@string/settings_spoken_replies_summary"
+            app:title="@string/settings_spoken_replies_title" />
 
     </PreferenceCategory>
 

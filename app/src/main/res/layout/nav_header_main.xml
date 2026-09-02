@@ -29,7 +29,7 @@ android:textColor="?attr/colorOnPrimaryContainer"/> <!-- M3 color -->
 android:id="@+id/navHeaderSubtitle"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:text="Your AI Assistant"
+android:text="@string/app_tagline"
 android:textAppearance="?attr/textAppearanceBodyMedium"
 android:textColor="?attr/colorOnPrimaryContainer"/> <!-- M3 color -->
     </LinearLayout>

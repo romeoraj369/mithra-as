@@ -1,97 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#0A0A0A"
-        tools:context=".MainActivity">
-
-        <!-- Title -->
-        <TextView
-            android:id="@+id/appTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MithraX Voice Assistant"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"/>
-
-        <!-- Subtitle -->
-        <TextView
-            android:id="@+id/appSubtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your offline AI companion"
-            android:textSize="16sp"
-            android:textColor="#AAAAAA"
-            android:layout_below="@id/appTitle"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp" />
-
-        <!-- Status box -->
-        <TextView
-            android:id="@+id/statusText1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Idle"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#4CAF50"
-            android:layout_below="@id/appSubtitle"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
-            android:padding="12dp"
-            android:background="@drawable/status_box" />
-
-        <!-- Circular Mic Button -->
-        <Button
-            android:id="@+id/startButton1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:text="🎤"
-            android:textSize="40sp"
-            android:layout_centerInParent="true"
-            android:background="@drawable/mic_button"
-            android:stateListAnimator="@null"
-            android:shadowColor="#000000"
-            android:shadowDx="2"
-            android:shadowDy="2"
-            android:shadowRadius="6" />
-
-        <!-- Footer -->
-        <TextView
-            android:id="@+id/footerText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Powered by Offline STT + NLP + TTS"
-            android:textSize="14sp"
-            android:textColor="#777777"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="24dp" />
-
-    </RelativeLayout>
+    android:background="#0A0A0A"
+    tools:context=".ui.dashboard.DashboardFragment">
 
     <TextView
-        android:id="@+id/statusText"
+        android:id="@+id/appTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dashboard Content Area"
-        android:textAppearance="?attr/textAppearanceHeadlineMedium"
-        android:layout_marginBottom="16dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/dashboard_title"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/dashboard_subtitle"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/statusText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appSubtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/status_box"
+        android:padding="12dp"
+        android:text="@string/status_idle"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/startButton"
+        android:id="@+id/startButton1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mic_button"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="6"
+        android:stateListAnimator="@null"
+        android:text="@string/mic_emoji"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/footerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Listening (Dashboard)"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/dashboard_footer"
+        android:textColor="#777777"
+        android:textSize="14sp" />
 
-</LinearLayout>
+</RelativeLayout>

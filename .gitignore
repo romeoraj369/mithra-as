@@ -9,16 +9,14 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build/
-
-# Un-ignore the path to debug APKs
-!/build/outputs/
-!/build/outputs/apk/
-!/build/outputs/apk/debug/
-!/build/outputs/apk/debug/*.apk
-
-/build/outputs/apk/debug/*
-!/build/outputs/apk/debug/*.apk
-/captures
+**/build/
 .externalNativeBuild
-.cxx
+**/.cxx/
+/captures
 local.properties
+
+# llama.cpp source checkout (clone with: git clone --depth 1 https://github.com/ggml-org/llama.cpp third_party/llama.cpp)
+/third_party/llama.cpp/
+
+# Local GGUF models must never be committed
+*.gguf

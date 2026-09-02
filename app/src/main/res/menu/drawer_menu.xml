@@ -7,27 +7,35 @@
         <item
             android:id="@+id/nav_dashboard"
             android:icon="@drawable/ic_dashboard_24"
-            android:title="Dashboard" />
+            android:title="@string/nav_dashboard" />
         <item
             android:id="@+id/nav_meetings"
             android:icon="@drawable/ic_dashboard_24"
-            android:title="Meetings" />
+            android:title="@string/nav_meetings" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_24"
+            android:title="@string/nav_search" />
+        <item
+            android:id="@+id/nav_ask"
+            android:icon="@drawable/ic_ask_24"
+            android:title="@string/nav_ask" />
         <item
             android:id="@+id/nav_tasks"
             android:icon="@drawable/ic_tasks_24"
-            android:title="Tasks" />
+            android:title="@string/nav_tasks" />
     </group>
 
-    <item android:title="Support">
+    <item android:title="@string/nav_support">
         <menu>
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_settings_24"
-                android:title="Settings" />
+                android:title="@string/nav_settings" />
             <item
                 android:id="@+id/nav_help"
                 android:icon="@drawable/ic_help_24"
-                android:title="Help" />
+                android:title="@string/nav_help" />
         </menu>
     </item>
 </menu>
